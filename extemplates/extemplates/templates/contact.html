@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    {% extends 'mutli.html' %}
+    {% block content %}
+
+    <form name="f1" action="{% url 'tg' %}" method="get">
+        <h1>Contact details </h1>
+        <label for="id1">mail id</label>
+        <input type="email" name="n1" id="id1"><br>
+        <input type="submit">
+    </form>
+
+    {% endblock content %}
+</body>
+</html>

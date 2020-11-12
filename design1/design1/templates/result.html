@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h3>Result Page</h3>
+    <p>Welcome Mr:{{k1}}</p>
+    <p>ur selected coures are:</p>
+    <ol>
+        {% for i in k2 %}
+        <li>{{i}}</li>
+        {% endfor %}
+    </ol>
+    <p> total fee for {{k3}} subjects is : {{k4}}</p>
+    <p>thank you </p>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

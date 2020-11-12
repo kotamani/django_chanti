@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+    </style>
+    <script>
+        function fun1()
+        {
+        var data1 =  document.f1.n1.value;
+        var data2 =  document.f1.n2.value;
+        if(data1=="")
+        {
+            alert('please enter name');
+            return false;
+        }
+        if(data2=="")
+        {
+            alert('please enter courses list');
+            return false;
+        }
+        else
+        {
+            alert('ok');
+            return true;
+        }
+        }
+    </script>
+</head>
+<body>
+
+    <form action="{% url 'result' %}" name="f1" onsubmit="return fun1()">
+        <table align="center">
+            <caption> Welcome</caption>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td><label>Courses</label></td>
+
+                <td><textarea name="n2" cols="10" rows="3"></textarea></td>
+            </tr>
+            <tr>
+
+                <td rowspan="2"><input type="submit"></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
